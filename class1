@@ -17,7 +17,7 @@ namespace Házi_feladat.barta.oliver
     {
         public static void Rend()
         {
-            for (int j = tb - 1; j > 0; j--)
+            for (int j = tm - 1; j > 0; j--)
             {
                 for (int k = 0; k < j; k++)
                 {
