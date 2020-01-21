@@ -17,15 +17,15 @@ namespace Házi_feladat.barta.oliver
     {
         public static void Rend()
         {
-            for (int j = tm - 1; j > 0; j--)
+            for (int l = tm - 1; l > 0; l--)
             {
-                for (int k = 0; k < j; k++)
+                for (int p = 0; p < l; p++)
                 {
-                    if (tomb[k] > tomb[k + 1])
+                    if (tomb[p] > tomb[p + 1])
                     {
-                        int s = tomb[k + 1];
-                        tomb[k + 1] = tomb[k];
-                        tomb[k] = s;
+                        int x = tomb[p + 1];
+                        tomb[p + 1] = tomb[p];
+                        tomb[p] = x;
                     }
                 }
             }
