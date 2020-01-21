@@ -1,0 +1,34 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Házi_feladat.barta.oliver
+{
+    public class first
+    {
+        public static int veletlenszeru;
+        public first()
+        {
+            Random rand = new Random();
+            veletlenszeru = rand.Next(1, 100);
+        } 
+    }
+    public class second : Program 
+    {
+        public static void Rend()
+        {
+            for (int j = tb - 1; j > 0; j--)
+            {
+                for (int k = 0; k < j; k++)
+                {
+                    if (tomb[k] > tomb[k + 1])
+                    {
+                        int s = tomb[k + 1];
+                        tomb[k + 1] = tomb[k];
+                        tomb[k] = s;
+                    }
+                }
+            }
+        }
+    }
+}
